@@ -48,14 +48,16 @@ button{
     cursor: pointer;
 }
 .shake{
-    animation: shake 2s infinite;
+    animation: shake 0.9s infinite;
 }
 @keyframes shake{
-    
+    0%{
+        transform: rotate(24deg);
+    }
     50%{
-        transform: rotate(-360deg);
+        transform: rotate(-24deg);
     }
     100%{
-        transform: rotate(-720deg);
+        transform: rotate(24deg);
     }
 }
